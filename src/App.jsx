@@ -27,6 +27,7 @@ function App() {
       userId: 2,
     };
     setTasks((tasks) => [data, ...tasks]);
+    setNewData("")
   };
 
   // count completed status
