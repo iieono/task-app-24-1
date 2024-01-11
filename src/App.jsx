@@ -27,7 +27,7 @@ function App() {
       userId: 2,
     };
     setTasks((tasks) => [data, ...tasks]);
-    setNewData("")
+    setNewData("");
   };
 
   // count completed status
@@ -71,10 +71,7 @@ function App() {
   };
 
   return (
-    <div
-      className="main-container"
-      id="main-container"
-    >
+    <div className="main-container" id="main-container">
       <div className="center-container">
         <div className="header-container">
           <p className="text-fuchsia-950 text-3xl font-bold tracking-wide">
@@ -93,6 +90,7 @@ function App() {
           <div className="h-1.5 bg-gray-300 rounded-full mt-1">
             <div
               className="h-full bg-blue-600 w-20 rounded-full"
+              id="progress"
               style={{ width: `${(count / tasks.length) * 100}%` }}
             ></div>
           </div>
