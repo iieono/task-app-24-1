@@ -74,7 +74,7 @@ function App() {
     <div className="main-container" id="main-container">
       <div className="center-container">
         <div className="header-container">
-          <p className="text-fuchsia-950 text-3xl font-bold tracking-wide">
+          <p className="text-white md:text-fuchsia-950 text-3xl font-bold tracking-wide">
             ToDO List
           </p>
           <p className="text-gray-300">{tasks.length} tasks</p>
@@ -83,7 +83,7 @@ function App() {
               icon={faCircleCheck}
               className="text-gray-200 text-xl flex items-center"
             />
-            <p className="text-fuchsia-950">
+            <p className="text-white md:text-fuchsia-950">
               Completed {Math.round((count / tasks.length) * 100)}% of the task.
             </p>
           </div>
@@ -100,7 +100,7 @@ function App() {
             value={newData}
             onChange={(e) => setNewData(e.target.value)}
             type="text"
-            className="border border-fuchsia-950  rounded-l-xl px-4 py-2 w-full focus:outline-none"
+            className="border border-fuchsia-950 rounded-l-xl px-4 py-2 w-full focus:outline-none"
             placeholder="New Task..."
           />
           <button
@@ -110,7 +110,7 @@ function App() {
             +
           </button>
         </div>
-        <div className="p-1 flex flex-col rounded-xl overflow-y-auto gap-2">
+        <div className="p-1 flex flex-col rounded-xl bg-inherit overflow-y-auto gap-2">
           {tasks &&
             tasks.map((task) => (
               <div
@@ -126,7 +126,7 @@ function App() {
                   ) : (
                     <FontAwesomeIcon
                       icon={faCircle}
-                      className="border-2 border-fuchsia-800 text-white rounded-full text-md flex items-center"
+                      className="border-2 border-fuchsia-800 text-transparent rounded-full text-md flex items-center"
                     />
                   )}
                 </div>

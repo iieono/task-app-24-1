@@ -20,6 +20,11 @@
   background-position: center; /* Adjust the position property as needed */
   background-repeat: no-repeat;
 }
+@media (max-width: 768px) {
+  #main-container {
+    background-position: 20%; 
+  }
+}
 
 ::-webkit-scrollbar {
   width: 0; 
@@ -38,7 +43,7 @@
   @apply w-screen h-screen bg-gray-300 flex justify-center sm:p-3
 }
 .center-container{
-  @apply  backdrop-blur-sm border  rounded-2xl shadow-xl p-2 min-w-full sm:min-w-96 flex flex-col gap-2
+  @apply  sm:backdrop-blur-sm border  rounded-2xl shadow-xl p-2 min-w-full sm:min-w-96 flex flex-col gap-2
 }
 .header-container{
   @apply bg-fuchsia-950 bg-opacity-50 rounded-2xl shadow-2xl p-3 px-5 flex flex-col
